@@ -1,0 +1,774 @@
+@charset "utf-8";
+
+@font-face {
+    font-family: 'Cafe24Shiningstar';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_twelve@1.1/Cafe24Shiningstar.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'HangeulNuri-Bold';
+    src: url(../font/HangeulNuriB.ttf) format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'HangeulNuri-right';
+    src: url(../font/HangeulNuriR.ttf) format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Cafe24Oneprettynight';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_twelve@1.1/Cafe24Oneprettynight.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+#wrap {
+    width: 100%;
+    min-width: 1280px;
+}
+
+.inner {
+    width: 1240px;
+    margin: 0 auto;
+    height: 940px;
+}
+
+header h2 {
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    z-index: 10000;
+}
+
+header .slide {
+    position: relative;
+}
+
+header .slide img {
+    width: 100%;
+}
+
+header .slide .slide1 p {
+    font-family: 'Cafe24Oneprettynight';
+    font-size: 70px;
+    position: absolute;
+    top: 600px;
+    left: 800px;
+}
+
+header .slide .slide3 p {
+    position: absolute;
+    top: 550px;
+    left: 100px;
+    font-family: 'Cafe24Oneprettynight';
+    font-size: 60px;
+}
+
+.bx-wrapper .bx-controls-direction a {
+    display: none;
+}
+
+.bx-wrapper {
+    border: none;
+    margin-bottom: 0;
+    box-shadow: none;
+}
+
+.bx-wrapper .bx-pager.bx-default-pager a.active {
+    background: rgb(255, 255, 255);
+    width: 100px;
+    height: 20px;
+    border-radius: 50px;
+}
+
+.bx-wrapper .bx-pager.bx-default-pager a {
+    background: rgba(255, 255, 255, 0.5);
+    margin: 0 3px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    margin-top: -70px;
+}
+
+.bx-wrapper .bx-pager.bx-default-pager a:hover {
+    background: none;
+}
+
+/*---------nav------------*/
+
+nav .quick_menu {
+    position: fixed;
+    right: 40px;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 999;
+    text-align: right;
+    font-family: 'Cafe24Oneprettynight';
+}
+
+
+nav .quick_menu li a {
+    display: inline-block;
+    position: relative;
+    line-height: 30px;
+    font-size: 20px;
+}
+
+
+nav .quick_menu li.active {
+    border-bottom: 1px solid black;
+}
+
+nav .quick_menu li a:hover {
+    color: rgb(116, 168, 109);
+}
+
+nav div {
+    position: fixed;
+    right: 40px;
+    top: 39.5%;
+    font-family: 'Cafe24Oneprettynight';
+    font-size: 20px;
+    text-align: right;
+    z-index: 99999999;
+}
+
+nav div:hover {
+    color: rgb(116, 168, 109);
+}
+
+
+nav .quick_menu .sub_menu {
+    display: none;
+}
+
+
+
+.sec1 {
+    height: 940px;
+    width: 100%;
+    background-color: #fff;
+}
+
+.sec1 h3 {
+    margin-bottom: 60px;
+    padding-top: 45px;
+    box-sizing: border-box;
+    text-align: center;
+    font-size: 60px;
+    font-family: 'Cafe24Shiningstar';
+    font-weight: normal;
+}
+
+.sec1 .conti1 {
+    position: relative;
+    width: 400px;
+    height: 384px;
+    float: left;
+    margin-right: 19px;
+    margin-bottom: 15px;
+}
+
+.sec1 .box .conti1 .back {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    opacity: 0;
+    transition: all 1s;
+    width: 400px;
+}
+
+.sec1 .box .conti1:hover .back {
+    opacity: 1;
+}
+
+.sec1 .box .conti1 p {
+    color: black;
+    font-family: 'HangeulNuri-right';
+    line-height: 28px;
+    font-size: 20px;
+}
+
+.sec1 .conti2 {
+    width: 400px;
+    height: 384px;
+    float: left;
+    margin-right: 13px;
+    margin-bottom: 15px;
+    position: relative;
+}
+
+.sec1 .box .conti2 .back {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: all 1s;
+    width: 400px;
+    opacity: 0;
+}
+
+.sec1 .box .conti2:hover .back {
+    opacity: 1;
+}
+
+.sec1 .box .conti2 p {
+    color: black;
+    font-family: 'HangeulNuri-right';
+    line-height: 28px;
+    font-size: 20px;
+}
+
+.sec1 .conti3 {
+    margin-bottom: 15px;
+    float: right;
+    width: 400px;
+    height: 384px;
+    position: relative;
+}
+
+.sec1 .box .conti3 .back {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: all 1s;
+    width: 400px;
+    opacity: 0;
+}
+
+.sec1 .box .conti3:hover .back {
+    opacity: 1;
+}
+
+.sec1 .box .conti3 p {
+    color: black;
+    font-family: 'HangeulNuri-right';
+    line-height: 28px;
+    font-size: 20px;
+}
+
+.sec1 .conti4 {
+    margin-right: 13px;
+    float: left;
+    width: 925px;
+    height: 334px;
+    position: relative;
+}
+
+.sec1 .box .conti4 .back {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    transition: all 1s;
+    width: 430px;
+    opacity: 0;
+}
+
+.sec1 .box .conti4:hover .back {
+    opacity: 1;
+}
+
+.sec1 .box .conti4 p {
+    color: black;
+    font-family: 'HangeulNuri-right';
+    line-height: 28px;
+    font-size: 20px;
+}
+
+
+.sec1 .conti5 {
+    float: right;
+    position: relative;
+}
+
+.sec1 .conti5 p {
+    position: absolute;
+    top: 80px;
+    left: 0;
+    font-family: 'Cafe24Shiningstar';
+    font-size: 70px;
+    text-align: center;
+}
+
+
+/*---------section2------------*/
+
+
+.sec2 {
+    background-image: url(../img/sec2_back.png);
+    background-repeat: no-repeat;
+    height: 940px;
+}
+
+.sec2 .left_box {
+    float: left;
+    opacity: 0;
+    transition: 2s;
+}
+
+.sec2 .left_box.show {
+    opacity: 1;
+    transform: translate(0, 0);
+}
+
+.sec2 img {
+    margin-top: 90px;
+}
+
+.sec2 .right_box {
+    float: left;
+    text-align: center;
+    padding-top: 190px;
+    padding-left: 100px;
+    opacity: 0;
+    transition: 3s;
+    transition-delay: 2s;
+}
+
+.sec2 .right_box.show {
+    opacity: 1;
+}
+
+.sec2 .right_box h3 {
+    font-family: 'Cafe24Shiningstar';
+    font-size: 130px;
+    font-weight: normal;
+    margin-bottom: 110px;
+}
+
+.sec2 .right_box .p1 {
+    font-family: 'HangeulNuri-Bold';
+    font-size: 45px;
+    margin-bottom: 100px;
+}
+
+.sec2 .right_box .p2 {
+    font-family: 'HangeulNuri-Bold';
+    font-size: 30px;
+    font-weight: normal;
+    line-height: 45px;
+}
+
+/*--------section3------------*/
+
+.sec3 {
+    height: 940px;
+    width: 100%;
+    position: relative;
+}
+
+.sec3 img:nth-child(1) {
+    position: absolute;
+    top: 150px;
+    left: 300px;
+}
+
+.sec3 .sec3_box {
+    opacity: 0;
+    transition: 2s;
+    transition-delay: 1s;
+}
+
+.sec3 .sec3_box.show {
+    opacity: 1;
+    transform: translateX(-70px)
+}
+
+
+.sec3 .sec3_box img {
+    position: absolute;
+    top: 400px;
+    left: 1000px;
+}
+
+.sec3 .sec3_box p {
+    position: absolute;
+    font-family: 'HangeulNuri-right';
+    top: 580px;
+    left: 1130px;
+    font-size: 30px;
+    font-weight: 100;
+    line-height: 40px;
+    text-align: center;
+}
+
+/*-------section4-----------*/
+
+.sec4 {
+    height: 940px;
+    width: 100%;
+    position: relative;
+}
+
+.sec4 img:nth-child(1) {
+    position: absolute;
+    top: 100px;
+    left: 700px;
+}
+
+.sec4 img:nth-child(2) {
+    position: absolute;
+    top: 330px;
+    left: 300px;
+}
+
+.sec4 .p1 {
+    position: absolute;
+    font-family: 'HangeulNuri-right';
+    top: 500px;
+    left: 500px;
+    font-size: 13px;
+    line-height: 20px;
+    text-align: center;
+    opacity: 0;
+    transition: 2s;
+    transition-delay: 1s;
+}
+
+.sec4 .p2 {
+    position: absolute;
+    font-family: 'HangeulNuri-right';
+    top: 640px;
+    left: 500px;
+    font-size: 13px;
+    line-height: 20px;
+    text-align: center;
+    opacity: 0;
+    transition: 2s;
+    transition-delay: 1s;
+}
+
+.sec4 .p1.show {
+    opacity: 1;
+    transform: scale(2);
+}
+
+.sec4 .p2.show {
+    opacity: 1;
+    transform: scale(2);
+}
+
+/*------------section5---------------*/
+
+.sec5 img {
+    float: left;
+    opacity: 0;
+    transition: 2s;
+    transition-delay: 4s;
+}
+
+.sec5 img.show {
+    opacity: 1;
+}
+
+.sec5 {
+    height: 940px;
+    width: 100%;
+    background-color: rgb(245, 244, 185);
+}
+
+
+.sec5 h3 {
+    font-family: 'Cafe24Shiningstar';
+    font-size: 130px;
+    font-weight: normal;
+    margin-bottom: 80px;
+    text-align: center;
+    padding-top: 200px;
+    opacity: 0;
+    transition: 2s;
+    color: rgb(30, 59, 0);
+    transition-delay: 1s;
+}
+
+.sec5 h3.show {
+    opacity: 1;
+}
+
+.sec5 .p1 {
+    font-family: 'HangeulNuri-right';
+    font-size: 30px;
+    text-align: center;
+    line-height: 40px;
+    margin-bottom: 50px;
+    opacity: 0;
+    transition: 2s;
+    transition-delay: 1.7s;
+}
+
+.sec5 .p1.show {
+    opacity: 1;
+}
+
+.sec5 .p2 {
+    font-family: 'HangeulNuri-right';
+    font-size: 30px;
+    font-weight: normal;
+    line-height: 40px;
+    text-align: center;
+    margin-bottom: 130px;
+    opacity: 0;
+    transition: 2s;
+    transition-delay: 2.5s;
+}
+
+.sec5 .p2.show {
+    opacity: 1;
+}
+
+.sec5 a {
+    font-family: 'HangeulNuri-right';
+    font-size: 20px;
+    margin-left: 830px;
+}
+
+
+.sec5 a:hover {
+    color: coral;
+}
+
+/*----------section6-----------*/
+
+.sec6 {
+    height: 940px;
+    width: 100%;
+    background-color: black;
+    background-image: url(../img/sec6_back.png);
+    position: relative;
+}
+
+.sec6 img {
+    margin-top: 100px;
+    float: right;
+}
+
+.sec6 h3 {
+    color: #fff;
+    font-size: 160px;
+    font-weight: normal;
+    text-align: center;
+    position: absolute;
+    font-family: 'Cafe24Shiningstar';
+    top: 150px;
+    left: 280px;
+    opacity: 0;
+    transition: 2s;
+}
+
+.sec6 h3.show {
+    opacity: 1;
+}
+
+.sec6 p {
+    color: #fff;
+    position: absolute;
+    font-family: 'HangeulNuri-right';
+    font-size: 30px;
+    line-height: 50px;
+    top: 430px;
+    left: 480px;
+    text-align: center;
+    opacity: 0;
+    transition: 2s;
+    transition-delay: 2s;
+}
+
+.sec6 p.show {
+    opacity: 1;
+}
+
+.sec7 {
+    width: 100%;
+    height: 940px;
+    background-color: black;
+    background-image: url(../img/sec6_back.png);
+    position: relative;
+}
+
+.sec7 img:nth-child(1) {
+    float: right;
+    margin-top: 98px;
+    margin-right: 140px;
+}
+
+.sec7 .sec7_box img {
+    position: absolute;
+    top: 250px;
+    left: 300px;
+}
+
+.sec7 .sec7_box {
+    opacity: 0;
+    transition: 2s;
+}
+
+.sec7 .sec7_box.show {
+    opacity: 1;
+}
+
+.sec7 .title {
+    position: absolute;
+    font-size: 28px;
+    font-family: 'HangeulNuri-right';
+    top: 380px;
+    text-align: center;
+    left: 410px;
+    line-height: 40px;
+}
+
+.sec7 .p1 {
+    font-family: 'HangeulNuri-right';
+    font-size: 22px;
+    position: absolute;
+    top: 500px;
+    left: 380px;
+    text-align: center;
+    line-height: 33px;
+}
+
+.sec7 .p2 {
+    font-family: 'HangeulNuri-right';
+    font-size: 22px;
+    position: absolute;
+    top: 670px;
+    left: 390px;
+    line-height: 33px;
+    text-align: center;
+}
+
+.sec7 a {
+    color: #fff;
+    position: absolute;
+    top: 800px;
+    left: 750px;
+    font-size: 21px;
+    font-family: 'HangeulNuri-right';
+}
+
+.sec7 a:hover {
+    color: aquamarine;
+}
+
+.sec8 {
+    width: 100%;
+    height: 940px;
+    background-color: rgb(241, 252, 233);
+    position: relative;
+}
+
+.sec8 .inner {
+    text-align: center;
+}
+
+.sec8 h3 {
+    font-family: 'Cafe24Shiningstar';
+    font-weight: normal;
+    font-size: 60px;
+    padding-top: 100px;
+    margin-bottom: 80px;
+}
+
+.sec8 .inner img:nth-child(3) {
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.sec8 h2 {
+    position: absolute;
+    left: 730px;
+    top: 660px;
+    font-size: 37px;
+    font-family: 'Cafe24Oneprettynight';
+    font-weight: normal;
+}
+
+
+.sec8 .left {
+    position: absolute;
+    top: 480px;
+    left: 270px;
+}
+
+.sec8 .right {
+    position: absolute;
+    top: 480px;
+    right: 270px;
+}
+
+
+.sec9 {
+    width: 100%;
+    height: 940px;
+    background-image: url(../img/sec9_back.png);
+}
+
+.sec9 h3 {
+    font-family: 'HangeulNuri-right';
+    font-size: 50px;
+    text-align: center;
+    padding-top: 370px;
+    line-height: 100px;
+    font-weight: 100;
+}
+
+.sec9 a {
+    font-family: 'HangeulNuri-right';
+    font-size: 60px;
+    margin-left: 735px;
+}
+
+.sec9 a:hover {
+    color: blueviolet;
+}
+
+footer {
+    width: 100%;
+    height: 310px;
+    background-color: rgb(39, 39, 39);
+}
+
+footer .footer_inner {
+    width: 1240px;
+    height: 310px;
+    margin: 0 auto;
+    padding-top: 30px;
+    box-sizing: border-box;
+}
+
+footer h2 {
+    float: left;
+}
+
+footer .right_box {
+    font-family: 'HangeulNuri-right';
+    float: right;
+    font-size: 21px;
+    margin-bottom: 50px;
+    color: #fff;
+}
+
+footer .left_box {
+
+    float: left;
+}
+
+footer .right_box2 {
+    font-family: 'HangeulNuri-right';
+    float: right;
+    color: #fff;
+    font-size: 16px;
+    margin-bottom: 50px;
+}
+
+footer .center {
+    text-align: center;
+    font-family: 'HangeulNuri-right';
+    color: #fff;
+    font-size: 12px;
+}
